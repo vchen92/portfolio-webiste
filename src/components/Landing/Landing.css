@@ -1,4 +1,5 @@
 .landing {
+	min-height: 100vh;
 }
 
 .landing__container {
