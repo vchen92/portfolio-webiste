@@ -1,36 +1,48 @@
+@import '../../shared.css';
+
 .navbar {
-	background-color: rgb(10, 25, 47, 0.85);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 11;
-	height: 70px;
 	display: flex;
 	align-items: center;
+	transition: var(--transition);
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+.navbar__top {
+	height: var(--nav-height);
+	background-color: var(--navy);
+}
+
+.navbar__hidden {
+	height: var(--nav-scroll-height);
+	transform: translateY(calc(var(--nav-scroll-height) * -1));
+}
+
+.navbar__scroll {
+	height: var(--nav-scroll-height);
+	box-shadow: 0 10px 30px -10px var(--navyShadow);
+	backdrop-filter: blur(10px);
+	background-color: rgb(10, 25, 47, 0.85);
 }
 
 .navbar__container {
-	padding: 0 40px;
 	display: flex;
 	align-items: center;
 	width: 100%;
 	justify-content: space-between;
 	box-sizing: border-box;
-	font-size: 13px;
+	font-size: var(--fz-xs);
 }
 
 .navbar__logo {
-	color: #ccd6f6;
+	color: var(--lightest-slate);
 }
 
 .navbar__links {
 	display: flex;
 	align-items: center;
-}
-
-.navbar__number {
-	color: #64ffda;
-	margin-right: 5px;
 }

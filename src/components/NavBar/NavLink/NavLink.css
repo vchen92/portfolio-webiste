@@ -1,4 +1,14 @@
+@import '../../../shared.css';
+
 .navlink {
-	color: #ccd6f6;
+	color: var(--lightest-slate);
 	margin-right: 30px;
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+	cursor: pointer;
+}
+
+.navlink__number {
+	color: var(--green);
+	margin-right: 5px;
 }
