@@ -1,9 +1,19 @@
+@import '../../shared.css';
+
 .custom_button {
-	background-color: #0a192f;
-	border-radius: 5px;
-	border: 1px solid #64ffda;
+	background-color: transparent;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--green);
 	padding: 10px 15px;
-	color: #64ffda;
+	color: var(--green);
+	cursor: pointer;
+	font-size: var(--fz-sm);
+	font-family: var(--font-mono);
+	outline: none;
+}
+
+.custom_button:hover {
+	background-color: var(--green-tint);
 }
 
 .custom_button__large {
