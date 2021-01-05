@@ -5,6 +5,7 @@
 .navbar__container {
 	padding: 30px 20px;
 	display: flex;
+	align-items: center;
 	width: 100%;
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -17,6 +18,7 @@
 
 .navbar__links {
 	display: flex;
+	align-items: center;
 }
 
 .navbar__number {

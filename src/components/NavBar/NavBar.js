@@ -2,6 +2,7 @@ import React from 'react';
 
 import './NavBar.css';
 import NavLink from './NavLink/NavLink';
+import CustomButton from './../CustomButton/CustomButton';
 
 function NavBar() {
 	return (
@@ -23,7 +24,7 @@ function NavBar() {
 						<NavLink to="contact">
 							<span className="navbar__number">04.</span>Contact
 						</NavLink>
-						<button className="navbar__button"></button>
+						<CustomButton>Resume</CustomButton>
 					</div>
 				</div>
 			</nav>
