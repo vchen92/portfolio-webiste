@@ -9,7 +9,9 @@ function NavBar() {
 		<>
 			<nav className="navbar">
 				<div className="navbar__container">
-					<div className="navbar__logo">TRVL</div>
+					<NavLink to="landing">
+						<div className="navbar__logo">TRVL</div>
+					</NavLink>
 					<div className="navbar__links">
 						<NavLink to="about">
 							<span className="navbar__number">01.</span>About

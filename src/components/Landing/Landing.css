@@ -1,4 +1,39 @@
 .landing {
-	height: 500px;
-	background-color: lightgray;
+}
+
+.landing__container {
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.landing__hi {
+	font-size: 16px;
+	margin: 0 0 30px 4px;
+	font-weight: 400;
+}
+
+.landing__name {
+	color: #ccd6f6;
+	font-size: clamp(40px, 8vw, 80px);
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.landing__subheader {
+	color: #8892b0;
+	font-size: clamp(40px, 8vw, 80px);
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 10px;
+}
+
+.landing__about {
+	color: #8892b0;
+	font-weight: 200;
+	max-width: 500px;
+	margin-top: 40px;
+}
+
+.landing__button {
+	margin-top: 50px;
 }

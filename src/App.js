@@ -9,21 +9,25 @@ import Landing from './components/Landing/Landing';
 
 function App() {
 	return (
-		<div className="App">
+		<div className="app">
 			<NavBar />
-			<Landing />
-			<Element name="about">
-				<About />
-			</Element>
-			<Element name="experience">
-				<Experience />
-			</Element>
-			<Element name="work">
-				<Work />
-			</Element>
-			<Element name="contact">
-				<Contact />
-			</Element>
+			<div className="app__container">
+				<Element name="landing">
+					<Landing />
+				</Element>
+				<Element name="about">
+					<About />
+				</Element>
+				<Element name="experience">
+					<Experience />
+				</Element>
+				<Element name="work">
+					<Work />
+				</Element>
+				<Element name="contact">
+					<Contact />
+				</Element>
+			</div>
 		</div>
 	);
 }

@@ -1,14 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Rubik:regular,bold,italic&subset=latin,latin-ext');
 
 * {
 	margin: 0;
 }
 
 body {
-	font-family: 'Calibre';
+	font-family: 'Rubik', 'San Francisco', 'SF Pro Text', -apple-system,
+		system-ui, sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.app {
 	background-color: #0a192f;
+}
+
+.app__container {
+	padding: 0 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 100px 0px;
+	max-width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .roboto-font {
 	font-family: 'Roboto Mono';
+}
+
+.teal {
+	color: #64ffda;
 }
