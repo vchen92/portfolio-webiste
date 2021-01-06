@@ -1,4 +1,42 @@
 .about {
-	height: 500px;
-	background-color: green;
+	max-width: 900px;
+}
+
+.about__description p {
+	margin-bottom: 15px;
+	font-size: var(--fz-md);
+	line-height: 1.8;
+}
+
+.about__container {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 50px;
+}
+
+.about__list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(140px, 200px));
+	padding: 0px;
+	margin: 20px 0px 0px;
+	overflow: hidden;
+	list-style: none;
+}
+
+.about__list li::before {
+	content: '▹';
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	color: var(--green);
+	font-size: var(--fz-sm);
+	line-height: 12px;
+}
+
+.about__list li {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	font-family: var(--font-mono);
+	font-size: var(--fz-sm);
 }
