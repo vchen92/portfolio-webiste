@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 
 import './NavBar.css';
 import NavLink from './NavLink/NavLink';
@@ -8,7 +8,7 @@ function NavBar() {
 	const [position, setPosition] = useState(0);
 	const [background, setBackground] = useState('navbar__top');
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const listener = document.addEventListener('scroll', () => {
 			const currPosition = window.scrollY;
 			const bkg =
@@ -25,7 +25,7 @@ function NavBar() {
 		return () => {
 			document.removeEventListener('scroll', listener);
 		};
-	}, [window.scrollY]);
+	}, [position]);
 
 	return (
 		<>
