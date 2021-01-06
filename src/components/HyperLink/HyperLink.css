@@ -1,0 +1,30 @@
+.hyperlink {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: var(--transition);
+	cursor: pointer;
+	color: var(--green);
+}
+
+.hyperlink::after {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 1px;
+	position: relative;
+	bottom: 0.37em;
+	background-color: var(--green);
+	transition: var(--transition);
+	opacity: 0.5;
+}
+
+.hyperlink:hover {
+	color: var(--green);
+	outline: 0px;
+}
+
+.hyperlink:hover::after {
+	width: 100%;
+}
