@@ -1,3 +1,7 @@
+.experience {
+	max-width: 700px;
+}
+
 .experience__container {
 	display: flex;
 }

@@ -3,8 +3,8 @@
 .tabPanel {
 	width: 100%;
 	height: auto;
-	padding-top: 10px;
-	padding-left: 30px;
+	padding: 10px 30px;
+	box-sizing: border-box;
 }
 
 .tabPanel__heading {
