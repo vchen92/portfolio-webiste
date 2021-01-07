@@ -10,16 +10,16 @@
 }
 
 .landing__hi {
-	font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+	font-size: clamp(var(--fz-md), 5vw, var(--fz-lg));
 	color: var(--green);
-	margin: 0 0 30px 4px;
+	margin: 0 0 20px 4px;
 	font-weight: 400;
 	font-family: var(--font-mono);
 }
 
 .landing__name {
 	color: var(--lightest-slate);
-	line-height: 1.1;
+	line-height: 1.3;
 }
 
 .landing__subheader {
@@ -30,15 +30,17 @@
 
 .landing__heading {
 	margin: 0px;
-	font-size: clamp(40px, 8vw, 80px);
+	font-size: clamp(25px, 8vw, 65px);
 	font-weight: 600;
 }
 
 .landing__about {
 	color: var(--slate);
+	font-size: var(--fz-lg);
 	font-weight: 200;
 	max-width: 500px;
 	margin-top: 40px;
+	line-height: 1.5;
 }
 
 .landing__button {

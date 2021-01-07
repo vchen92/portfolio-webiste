@@ -4,8 +4,8 @@
 
 .about__description p {
 	margin-bottom: 15px;
-	font-size: var(--fz-md);
-	line-height: 1.8;
+	font-size: 17px;
+	line-height: 1.5;
 }
 
 .about__container {
