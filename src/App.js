@@ -2,7 +2,7 @@ import './App.css';
 import Experience from './components/Experience/Experience';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
-import Work from './components/Work/Work';
+import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import { Element } from 'react-scroll';
 import Landing from './components/Landing/Landing';
@@ -21,8 +21,8 @@ function App() {
 				<Element name="experience">
 					<Experience />
 				</Element>
-				<Element name="work">
-					<Work />
+				<Element name="projects">
+					<Projects />
 				</Element>
 				<Element name="contact">
 					<Contact />

@@ -41,8 +41,8 @@ function NavBar() {
 						<NavLink to="experience" number="02">
 							Experience
 						</NavLink>
-						<NavLink to="work" number="03">
-							Work
+						<NavLink to="projects" number="03">
+							Projects
 						</NavLink>
 						<NavLink to="contact" number="04">
 							Contact
