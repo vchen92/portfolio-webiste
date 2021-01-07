@@ -1,0 +1,51 @@
+.tabList {
+	position: relative;
+	z-index: 3;
+	width: max-content;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.tabList button {
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: var(--transition);
+	cursor: pointer;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	width: 100%;
+	height: var(--tab-height);
+	padding: 0px 20px 2px;
+	border-left: 2px solid var(--lightest-navy) !important;
+	background-color: transparent;
+	color: var(--slate);
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+	text-align: left;
+	white-space: nowrap;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.tabList button:hover,
+.tabList button:active,
+.tabList button:focus {
+	background-color: var(--light-navy);
+	color: var(--green);
+	outline: 0px;
+}
+
+.tabList__styledHighlight {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	width: 2px;
+	height: var(--tab-height);
+	border-radius: var(--border-radius);
+	background: var(--green);
+	transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
