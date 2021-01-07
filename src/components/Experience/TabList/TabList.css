@@ -30,6 +30,12 @@
 	border-radius: 0px;
 }
 
+.tabList button.active {
+	background-color: var(--light-navy);
+	color: var(--green);
+	outline: 0px;
+}
+
 .tabList button:hover,
 .tabList button:active,
 .tabList button:focus {

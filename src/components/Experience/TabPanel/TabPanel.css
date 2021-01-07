@@ -40,7 +40,9 @@
 
 .tabPanel__list li::before {
 	content: '▹';
+	font-size: var(--fz-lg);
 	position: absolute;
+	top: -2px;
 	left: 0px;
 	color: var(--green);
 }

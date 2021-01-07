@@ -26,6 +26,7 @@ function Experience() {
 					tabs={WorkExperiences}
 					onSelectTabItem={onClickTabItem}
 					tabSlider={tabSliderStyle}
+					activeTab={activeTab}
 				/>
 				{WorkExperiences.map(
 					(exp, idx) =>
