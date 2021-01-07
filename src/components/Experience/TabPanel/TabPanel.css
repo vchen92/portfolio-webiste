@@ -1,0 +1,53 @@
+@import '../../../shared.css';
+
+.tabPanel {
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.tabPanel__heading {
+	margin-bottom: 5px;
+}
+
+.tabPanel__position {
+	font-size: var(--fz-xl);
+	font-weight: 500;
+	color: var(--lightest-slate);
+}
+
+.tabPanel__company {
+	font-size: var(--fz-xl);
+	font-weight: 500;
+	color: var(--green);
+}
+
+.tabPanel__date {
+	margin-bottom: 30px;
+	color: var(--light-slate);
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+}
+
+.tabPanel__list {
+	padding: 0px;
+	margin: 20px 0px 0px;
+	overflow: hidden;
+	list-style-type: none;
+	font-size: var(--fz-md);
+}
+
+.tabPanel__list li::before {
+	content: '▹';
+	position: absolute;
+	left: 0px;
+	color: var(--green);
+}
+
+.tabPanel__list li {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
