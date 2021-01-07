@@ -2,13 +2,13 @@ import React from 'react';
 import './TabPanel.css';
 import HyperLink from './../../HyperLink/HyperLink';
 
-function TabPanel({ position, company, url, startDate, endDate, items }) {
+function TabPanel({ position, name, url, startDate, endDate, items }) {
 	return (
 		<div className="tabPanel">
 			<p className="tabPanel__heading">
 				<span className="tabPanel__position">{position}</span>{' '}
 				<span className="tabPanel__company">
-					@ <HyperLink url={url}>{company}</HyperLink>
+					@ <HyperLink url={url}>{name}</HyperLink>
 				</span>
 			</p>
 			<p className="tabPanel__date">
