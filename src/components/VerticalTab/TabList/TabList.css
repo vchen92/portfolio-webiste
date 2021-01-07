@@ -1,3 +1,5 @@
+@import '../../../shared.css';
+
 .tabList {
 	position: relative;
 	z-index: 3;

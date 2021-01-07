@@ -1,8 +1,8 @@
 import React, { useLayoutEffect, useState } from 'react';
 
 import './NavBar.css';
-import NavLink from './NavLink/NavLink';
-import CustomButton from './../CustomButton/CustomButton';
+import CustomButton from '../../UI/CustomButton/CustomButton';
+import NavLink from '../NavLink/NavLink';
 
 function NavBar() {
 	const [position, setPosition] = useState(0);

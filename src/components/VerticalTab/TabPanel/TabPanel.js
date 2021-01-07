@@ -1,6 +1,6 @@
 import React from 'react';
 import './TabPanel.css';
-import HyperLink from './../../HyperLink/HyperLink';
+import HyperLink from '../../UI/HyperLink/HyperLink';
 
 function TabPanel({ position, name, url, startDate, endDate, items }) {
 	return (

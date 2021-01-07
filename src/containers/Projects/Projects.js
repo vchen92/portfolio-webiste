@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import NumberHeading from '../NumberHeading/NumberHeading';
+import NumberHeading from '../../components/NumberHeading/NumberHeading';
 
 function Projects() {
 	return (

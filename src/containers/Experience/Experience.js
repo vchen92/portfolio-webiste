@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TabList from './TabList/TabList';
-import TabPanel from './TabPanel/TabPanel';
-import NumberHeading from './../NumberHeading/NumberHeading';
-import WorkExperiences from './workExperience';
+import TabPanel from '../../components/VerticalTab/TabPanel/TabPanel';
+import TabList from './../../components/VerticalTab/TabList/TabList';
+import NumberHeading from '../../components/NumberHeading/NumberHeading';
+import WorkExperiences from '../../workExperience';
 import './Experience.css';
 
 function Experience() {
@@ -29,7 +29,7 @@ function Experience() {
 				/>
 				{WorkExperiences.map(
 					(exp, idx) =>
-						idx == activeTab && (
+						idx === activeTab && (
 							<TabPanel
 								activeTab={activeTab}
 								key={idx}

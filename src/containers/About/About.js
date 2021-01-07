@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './About.css';
-import NumberHeading from '../NumberHeading/NumberHeading';
-import Picture from './Picture/Picture';
-import HyperLink from './../HyperLink/HyperLink';
+import NumberHeading from '../../components/NumberHeading/NumberHeading';
+import HyperLink from '../../components/UI/HyperLink/HyperLink';
+import Picture from '../../components/Picture/Picture';
 
 const skills = [
 	'JavaScript (ES6+)',

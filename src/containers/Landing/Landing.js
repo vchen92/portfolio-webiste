@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import CustomButton from './../CustomButton/CustomButton';
+import CustomButton from '../../components/UI/CustomButton/CustomButton';
 
 function Landing() {
 	return (

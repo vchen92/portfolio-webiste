@@ -1,11 +1,11 @@
 import './App.css';
-import Experience from './components/Experience/Experience';
-import NavBar from './components/NavBar/NavBar';
-import About from './components/About/About';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import Experience from './containers/Experience/Experience';
+import About from './containers/About/About';
+import Projects from './containers/Projects/Projects';
+import Contact from './containers/Contact/Contact';
 import { Element } from 'react-scroll';
-import Landing from './components/Landing/Landing';
+import Landing from './containers/Landing/Landing';
+import NavBar from './components/Navigation/NavBar/NavBar';
 
 function App() {
 	return (
