@@ -1,0 +1,55 @@
+@import '../../shared.css';
+
+.project__featured {
+	margin: 10px 0px;
+	color: var(--green);
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+	font-weight: 400;
+}
+
+.project__title {
+	color: var(--lightest-slate);
+	font-size: clamp(20px, 5vw, 25px);
+	margin: 0px 0px 10px;
+}
+
+.project__description {
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	transition: var(--transition);
+	position: relative;
+	z-index: 2;
+	padding: 25px;
+	border-radius: var(--border-radius);
+	background-color: var(--light-navy);
+	color: var(--light-slate);
+	font-size: var(--fz-md);
+	text-align: right;
+	line-height: 1.5;
+}
+
+.project__description:hover {
+	box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+
+.project__technologies {
+	z-index: 2;
+	margin: 25px 0px 10px;
+	text-align: right;
+}
+
+.project__technologies span {
+	margin: 0px 20px 5px 0px;
+	color: var(--light-slate);
+	font-family: var(--font-mono);
+	font-size: var(--fz-xs);
+	white-space: nowrap;
+}
+
+.project__links {
+	text-align: right;
+}
+
+.project__links span {
+	margin-right: 5px;
+}
