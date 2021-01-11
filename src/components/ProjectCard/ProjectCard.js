@@ -7,14 +7,18 @@ function ProjectCard({
 	description,
 	technologies,
 	externalUrl,
-  githubUrl,
-  screenshotPath,
+	githubUrl,
+	screenshotPath,
 }) {
 	return (
 		<div className="projectCard">
 			<div className="projectCard__image-container">
 				<a href={externalUrl} target="_blank" rel="noreferrer">
-					<img className="projectCard__image" src={screenshotPath} />
+					<img
+						className="projectCard__image"
+						src={screenshotPath}
+						alt=""
+					/>
 				</a>
 			</div>
 

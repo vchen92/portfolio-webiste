@@ -1,4 +1,30 @@
+@import '../../shared.css';
+
 .contact {
-	height: 500px;
-	background-color: red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px auto 100px;
+	max-width: 600px;
+}
+
+.contact__heading {
+	color: var(--green);
+	font-family: var(--font-mono);
+	font-size: var(--fz-md);
+	margin-bottom: 20px;
+}
+
+.contact__title {
+	color: var(--lightest-slate);
+	font-size: clamp(30px, 5vw, 45px);
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contact__text {
+	font-size: var(--fz-lg);
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: 50px;
 }
