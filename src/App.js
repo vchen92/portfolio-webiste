@@ -1,10 +1,10 @@
 import './App.css';
-import Experience from './containers/Experience/Experience';
-import About from './containers/About/About';
-import Projects from './containers/Projects/Projects';
-import Contact from './containers/Contact/Contact';
+import Experience from './sections/Experience/Experience';
+import About from './sections/About/About';
+import Projects from './sections/Projects/Projects';
+import Contact from './sections/Contact/Contact';
 import { Element } from 'react-scroll';
-import Landing from './containers/Landing/Landing';
+import Landing from './sections/Landing/Landing';
 import NavBar from './components/Navigation/NavBar/NavBar';
 
 function App() {
