@@ -9,7 +9,7 @@ function SocialSide() {
 		<div className="social-side">
 			<SideLinks side="left">
 				{socialMedia.map(({ name, url }) => (
-					<a key={name} href={url}>
+					<a key={name} href={url} target="_blank" rel="noreferrer">
 						<Icon name={name} />
 					</a>
 				))}

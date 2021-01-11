@@ -5,7 +5,7 @@
 	text-orientation: mixed;
 	font-size: var(--fz-sm);
 	font-family: var(--font-mono);
-	letter-spacing: 0.1em;
+	letter-spacing: 0.15em;
 	padding: 10px;
 }
 
