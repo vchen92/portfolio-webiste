@@ -1,6 +1,6 @@
 import React from 'react';
 import NumberHeading from '../../components/NumberHeading/NumberHeading';
-import PersonalProjects from './../../store/projects';
+import featuredProjects from './../../store/featured';
 import ProjectCard from './../../components/ProjectCard/ProjectCard';
 import './Projects.css';
 
@@ -9,7 +9,7 @@ function Projects() {
 		<div className="projects section">
 			<NumberHeading number="03">Some Things I've Built</NumberHeading>
 			<div className="projects__container">
-				{PersonalProjects.map((proj, idx) => (
+				{featuredProjects.map((proj, idx) => (
 					<ProjectCard key={idx} {...proj} />
 				))}
 			</div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TabPanel from '../../components/VerticalTab/TabPanel/TabPanel';
 import TabList from './../../components/VerticalTab/TabList/TabList';
 import NumberHeading from '../../components/NumberHeading/NumberHeading';
-import WorkExperiences from '../../store/workExperience';
+import Jobs from '../../store/jobs';
 import './Experience.css';
 
 function Experience() {
@@ -23,11 +23,11 @@ function Experience() {
 			<NumberHeading number="02">Where I've Worked</NumberHeading>
 			<div className="experience__container">
 				<TabList
-					tabs={WorkExperiences}
+					tabs={Jobs}
 					onSelectTabItem={onClickTabItem}
 					tabSlider={tabSliderStyle}
 				/>
-				{WorkExperiences.map(
+				{Jobs.map(
 					(exp, idx) =>
 						idx === activeTab && (
 							<TabPanel

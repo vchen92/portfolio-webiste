@@ -1,4 +1,4 @@
-const WorkExperiences = [
+const Jobs = [
 	{
 		position: 'Full Stack Software Developer',
 		name: 'CoinSeason',
@@ -31,4 +31,4 @@ const WorkExperiences = [
 	},
 ];
 
-export default WorkExperiences;
+export default Jobs;
