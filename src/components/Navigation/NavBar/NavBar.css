@@ -46,3 +46,9 @@
 	display: flex;
 	align-items: center;
 }
+
+@media (max-width: 1080px) {
+	.navbar {
+		padding: 0px 40px;
+	}
+}
