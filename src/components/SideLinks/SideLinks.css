@@ -1,0 +1,35 @@
+.side-links {
+	width: 40px;
+	position: fixed;
+	bottom: 0px;
+	left: 40px;
+	right: auto;
+	z-index: 10;
+	color: var(--light-slate);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.side-links__container {
+	margin-bottom: 20px;
+}
+
+.side-links:after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin: 0px auto;
+	background-color: var(--light-slate);
+}
+
+.side-links.left {
+	left: 40px;
+	right: auto;
+}
+
+.side-links.right {
+	left: auto;
+	right: 40px;
+}

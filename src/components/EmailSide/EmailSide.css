@@ -1,0 +1,24 @@
+@import '../../shared.css';
+
+.email-side .side-links__container {
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-size: var(--fz-sm);
+	font-family: var(--font-mono);
+	letter-spacing: 0.1em;
+	padding: 10px;
+}
+
+.email-side a {
+	color: var(--light-slate);
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+.email-side .side-links__container:hover {
+	transform: translateY(-3px);
+}
+
+.email-side .side-links__container:hover a {
+	color: var(--green);
+}
