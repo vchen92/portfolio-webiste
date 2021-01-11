@@ -4,7 +4,6 @@ import Resume from '../../../content/resume2020.pdf';
 import './NavBar.css';
 import CustomButton from '../../UI/CustomButton/CustomButton';
 import NavLink from '../NavLink/NavLink';
-import Icon from './../../../icons/icons';
 
 function NavBar() {
 	const [position, setPosition] = useState(0);
@@ -35,7 +34,7 @@ function NavBar() {
 				<div className="navbar__container">
 					<NavLink to="landing">
 						<div className="navbar__logo">
-							<img src="/logo.png" />
+							<img src="/logo.png" alt="" />
 						</div>
 					</NavLink>
 					<div className="navbar__links">
