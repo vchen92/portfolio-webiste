@@ -7,6 +7,8 @@ import { Element } from 'react-scroll';
 import Landing from './sections/Landing/Landing';
 import NavBar from './components/Navigation/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import SocialSide from './components/SocialSide/SocialSide';
+import EmailSide from './components/EmailSide/EmailSide';
 
 function App() {
 	return (
@@ -29,6 +31,8 @@ function App() {
 					<Contact />
 				</Element>
 			</div>
+			<SocialSide />
+			<EmailSide />
 			<Footer />
 		</div>
 	);

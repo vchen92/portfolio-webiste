@@ -15,8 +15,8 @@ function TabPanel({ position, name, url, startDate, endDate, items }) {
 				{startDate} - {endDate}
 			</p>
 			<ul className="tabPanel__list">
-				{items.map(item => (
-					<li>{item}</li>
+				{items.map((item, idx) => (
+					<li key={idx}>{item}</li>
 				))}
 			</ul>
 		</div>

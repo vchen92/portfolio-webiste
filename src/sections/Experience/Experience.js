@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TabPanel from '../../components/VerticalTab/TabPanel/TabPanel';
 import TabList from './../../components/VerticalTab/TabList/TabList';
 import NumberHeading from '../../components/NumberHeading/NumberHeading';
-import Jobs from '../../store/jobs';
+import Jobs from '../../content/jobs';
 import './Experience.css';
 
 function Experience() {

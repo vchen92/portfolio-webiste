@@ -1,8 +1,8 @@
 import React from 'react';
 import NumberHeading from '../../components/NumberHeading/NumberHeading';
-import featuredProjects from './../../store/featured';
 import ProjectCard from './../../components/ProjectCard/ProjectCard';
 import './Projects.css';
+import featuredProjects from '../../content/featured';
 
 function Projects() {
 	return (

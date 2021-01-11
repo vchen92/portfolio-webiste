@@ -50,8 +50,8 @@ function About() {
 						recently:
 					</p>
 					<ul className="about__list">
-						{skills.map(skill => (
-							<li>{skill}</li>
+						{skills.map((skill, idx) => (
+							<li key={idx}>{skill}</li>
 						))}
 					</ul>
 				</div>

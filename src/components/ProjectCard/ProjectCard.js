@@ -27,8 +27,8 @@ function ProjectCard({
 				<h2 className="projectCard__title">{title}</h2>
 				<div className="projectCard__description">{description}</div>
 				<div className="projectCard__technologies">
-					{technologies.map(tech => (
-						<span>{tech}</span>
+					{technologies.map((tech, idx) => (
+						<span key={idx}>{tech}</span>
 					))}
 				</div>
 				<div className="projectCard__links">
