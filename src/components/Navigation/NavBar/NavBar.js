@@ -1,8 +1,10 @@
 import React, { useLayoutEffect, useState } from 'react';
+import Resume from '../../../content/resume2020.pdf';
 
 import './NavBar.css';
 import CustomButton from '../../UI/CustomButton/CustomButton';
 import NavLink from '../NavLink/NavLink';
+import Icon from './../../../icons/icons';
 
 function NavBar() {
 	const [position, setPosition] = useState(0);
@@ -32,7 +34,9 @@ function NavBar() {
 			<nav className={`navbar ${background}`}>
 				<div className="navbar__container">
 					<NavLink to="landing">
-						<div className="navbar__logo">TRVL</div>
+						<div className="navbar__logo">
+							<img src="/logo.png" />
+						</div>
 					</NavLink>
 					<div className="navbar__links">
 						<NavLink to="about" number="01">
@@ -47,7 +51,9 @@ function NavBar() {
 						<NavLink to="contact" number="04">
 							Contact
 						</NavLink>
-						<CustomButton>Resume</CustomButton>
+						<a href={Resume} target="_blank" rel="noreferrer">
+							<CustomButton>Resume</CustomButton>
+						</a>
 					</div>
 				</div>
 			</nav>

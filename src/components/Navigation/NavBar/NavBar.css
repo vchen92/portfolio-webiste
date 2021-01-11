@@ -39,7 +39,20 @@
 }
 
 .navbar__logo {
-	color: var(--lightest-slate);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+}
+
+.navbar__logo img {
+	width: 42px;
+	object-fit: contain;
+	color: none;
+}
+
+.navbar__logo img:hover {
+	width: 46px;
 }
 
 .navbar__links {
