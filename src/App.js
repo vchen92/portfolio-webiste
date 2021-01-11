@@ -6,6 +6,7 @@ import Contact from './sections/Contact/Contact';
 import { Element } from 'react-scroll';
 import Landing from './sections/Landing/Landing';
 import NavBar from './components/Navigation/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 					<Contact />
 				</Element>
 			</div>
+			<Footer />
 		</div>
 	);
 }
