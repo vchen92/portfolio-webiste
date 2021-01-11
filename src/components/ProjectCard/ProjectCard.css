@@ -20,28 +20,31 @@
 }
 
 .projectCard__image-container {
-	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	height: 100%;
 	transition: var(--transition);
 	grid-area: 1 / 6 / -1 / -1;
 	position: relative;
 	z-index: 1;
+	padding: 10px 0px 10px 10px;
+	box-sizing: border-box;
 }
 
 .projectCard:nth-of-type(2n + 1) .projectCard__image-container {
 	grid-column: 1 / 8;
+	padding: 10px 10px 10px 0px;
+}
+
+.projectCard__image-container:hover {
+	padding: 0px !important;
 }
 
 .projectCard__image {
-	width: 100%;
+	width: 95%;
+	height: 100%;
 	border-radius: var(--border-radius);
 	vertical-align: middle;
-	object-fit: contain;
-}
-
-.projectCard__image {
-	width: 100%;
-	max-width: 100%;
-	vertical-align: middle;
+	object-fit: cover;
+	object-position: center left;
 }
 
 .projectCard__content {
@@ -112,13 +115,35 @@
 }
 
 .projectCard__links {
-	text-align: left;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .projectCard:nth-of-type(2n + 1) .projectCard__links {
-	text-align: right;
+	justify-content: flex-end;
 }
 
 .projectCard__links span:not(:last-of-type) {
 	margin-right: 5px;
+}
+
+.projectCard__links a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	color: var(--light-slate);
+}
+
+.projectCard__links a:hover {
+	color: var(--green);
+}
+
+.projectCard__links a svg {
+	width: 20px;
+	height: 20px;
+}
+
+svg.feather {
+	fill: none;
 }

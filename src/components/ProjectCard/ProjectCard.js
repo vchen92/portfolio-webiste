@@ -1,16 +1,20 @@
 import React from 'react';
-import HyperLink from './../UI/HyperLink/HyperLink';
 import './ProjectCard.css';
+import Icon from './../../icons/icons';
 
-function ProjectCard({ title, description, technologies, url, githubUrl }) {
+function ProjectCard({
+	title,
+	description,
+	technologies,
+	externalUrl,
+  githubUrl,
+  screenshotPath,
+}) {
 	return (
 		<div className="projectCard">
 			<div className="projectCard__image-container">
-				<a href="www.google.com">
-					<img
-						className="projectCard__image"
-						src="https://www.scnsoft.com/blog-pictures/web-apps/web-application-vs-website-01.png"
-					/>
+				<a href={externalUrl} target="_blank" rel="noreferrer">
+					<img className="projectCard__image" src={screenshotPath} />
 				</a>
 			</div>
 
@@ -25,10 +29,14 @@ function ProjectCard({ title, description, technologies, url, githubUrl }) {
 				</div>
 				<div className="projectCard__links">
 					<span>
-						<HyperLink url={url}>Website</HyperLink>
+						<a href={githubUrl} target="_blank" rel="noreferrer">
+							<Icon name="Github" />
+						</a>
 					</span>
 					<span>
-						<HyperLink url={githubUrl}>GitHub</HyperLink>
+						<a href={externalUrl} target="_blank" rel="noreferrer">
+							<Icon name="External" />
+						</a>
 					</span>
 				</div>
 			</div>
