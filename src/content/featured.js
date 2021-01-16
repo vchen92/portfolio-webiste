@@ -1,5 +1,14 @@
 const featuredProjects = [
 	{
+		title: 'Covid-19 Tracker',
+		externalUrl: 'https://covid-19-bed80.web.app/',
+		githubUrl: 'https://github.com/vchen92/covid-19-tracker',
+		description:
+			'A web app for visualizing the spread and recovery of Covid-19 on a global scale. Easily find out the number of infected, recovered, and death toll by selecting a country on the dropdown or clicking/hovering over countries on the map.',
+		technologies: ['React', 'React-leaflet', 'Disease.sh API'],
+		screenshotPath: '/images/covid-tracker.png',
+	},
+	{
 		title: 'Netflix Clone',
 		externalUrl: 'https://netflix-6fe36.web.app/',
 		githubUrl: 'https://github.com/vchen92/netflix-clone',
@@ -9,13 +18,13 @@ const featuredProjects = [
 		screenshotPath: '/images/netflix-clone.png',
 	},
 	{
-		title: 'Covid-19 Tracker',
-		externalUrl: 'https://covid-19-bed80.web.app/',
-		githubUrl: 'https://github.com/vchen92/covid-19-tracker',
+		title: 'WhatsApp Clone',
+		externalUrl: 'https://whatsapp-clo-40d6b.web.app/',
+		githubUrl: 'https://github.com/vchen92/whatsapp-clone',
 		description:
-			'A web app for visualizing the spread and recovery of Covid-19 on a global or national scale. Easily find out the infected, recovered, and death toll by selecting a country on the dropdown or clicking/hovering over countries on the map.',
-		technologies: ['React', 'React-leaflet', 'Disease.sh API'],
-		screenshotPath: '/images/covid-tracker.png',
+			'A web-based WhatsApp clone that utilizes Firebase to implement Google sign-in and creating group chats for multiple users',
+		technologies: ['React', 'Firebase'],
+		screenshotPath: '/images/whatsapp-clone.png',
 	},
 ];
 

@@ -6,12 +6,12 @@ const Jobs = [
 		startDate: 'April 2018',
 		endDate: 'April 2019',
 		items: [
-			'Created, delivered and maintained scalable system architecture to support high-availability Internet site with various internal applications',
-			'Trusted by CTO to lead team of 3 to build and beautify a responsive front-end interface using Angular framework',
-			'Planned and engineered RESTful web services to manipulate dynamic datasets using AWS API Gateway + Lambda and Serverless framework',
+			'Created and maintained a scalable system architecture for a cryptocurrency exchange platform',
+			'Lead team of 3 to build and beautify a responsive front-end interface using Angular framework',
+			'Planned and created RESTful web services using AWS API Gateway + Lambda and Serverless framework',
 			'Utilized MySQL and Amazon RDS for processing data requests, optimizing database schemas and data migration',
-			'Implementation of referral program and admin portal increased user registration rate by 22% and reduced cost for user KYC and transaction verifications by 53% respectively',
-			'Mentored new developers by helping with onboarding and explaining different parts of the system',
+			'Designed the referral program which increased user registration rate by 22%',
+			'Created admin portal that reduced cost for user KYC and transaction verifications by 53%',
 		],
 	},
 	{
@@ -21,12 +21,10 @@ const Jobs = [
 		startDate: 'April 2016',
 		endDate: 'February 2018',
 		items: [
-			'Improved match results of a bot capable of image comparisons, using Microsoft Cognitive Services, by 40%',
-			'Worked in Scrum Agile-driven environment to effectively maintain project timelines and utilize available resources',
-			'Evaluated project requirements and specifications to develop software applications that surpassed client expectations',
+			'Wrote modern, performant, maintainable code for internal projects and a diverse array of clients, including Microsoft, Sony and Adobe',
+			'Worked with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, Swift 3, Xcode, Knockout.js, AEM, Java, Cordova, and Microsoft Azure',
+			'Communicated with multi-disciplinary teams of engineers, designers, producers, and clients in a Scrum Agile-driven environment',
 			'Designed and updated layouts to meet usability and performance requirements for web, mobile, AEM and DMS applications',
-			'Participated in more than 4 projects per year from initial research and conceptual design through testing and implementation phases',
-			'Carefully documented technical workflows and knowledge in private wiki for education of newly hired employees',
 		],
 	},
 ];

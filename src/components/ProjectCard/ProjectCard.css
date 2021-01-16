@@ -43,8 +43,8 @@
 	height: 100%;
 	border-radius: var(--border-radius);
 	vertical-align: middle;
-	object-fit: cover;
-	object-position: center left;
+	object-fit: fill;
+	object-position: center center;
 }
 
 .projectCard__content {

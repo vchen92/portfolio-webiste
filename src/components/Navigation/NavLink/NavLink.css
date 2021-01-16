@@ -12,3 +12,7 @@
 	color: var(--green);
 	margin-right: 5px;
 }
+
+.navlink:hover {
+	color: var(--green);
+}

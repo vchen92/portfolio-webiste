@@ -11,16 +11,18 @@ function Landing() {
 					Vincent Chen.
 				</h2>
 				<h3 className="landing__subheader landing__heading">
-					I build things for the web.
+					I create apps for the internet.
 				</h3>
 				<div className="landing__about">
 					I'm a software engineer based in Vancouver, BC specializing
-					in building (and occasionally designing) exceptional
-					websites, applications and everything in between.
+					in building exceptional websites, applications and
+					everything in between.
 				</div>
-				<CustomButton styleName="landing__button" large>
-					Get In Touch
-				</CustomButton>
+				<a href="mailto:vince.chen92@gmail.com">
+					<CustomButton styleName="landing__button" large>
+						Get In Touch
+					</CustomButton>
+				</a>
 			</div>
 		</div>
 	);

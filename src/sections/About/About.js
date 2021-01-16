@@ -4,6 +4,7 @@ import './About.css';
 import NumberHeading from '../../components/NumberHeading/NumberHeading';
 import HyperLink from '../../components/UI/HyperLink/HyperLink';
 import Picture from '../../components/Picture/Picture';
+import Jobs from '../../content/jobs';
 
 const skills = [
 	'JavaScript (ES6+)',
@@ -12,6 +13,8 @@ const skills = [
 	'HTML & (S)CSS',
 	'Angular',
 	'TypeScript',
+	'AWS',
+	'MySQL',
 ];
 
 const imageUrl =
@@ -28,19 +31,21 @@ function About() {
 						Vancouver, BC.
 					</p>
 					<p>
-						I enjoy creating things that live on the internet,
-						whether that be websites, applications, or anything in
-						between. My goal i sto always build products that
-						provide pixel-perfect, performant experiences.
+						I enjoy creating things that people may use on the
+						internet, whether that be websites, applications, or
+						anything in between. My goal is to always build products
+						that provide pixel-perfect, performant experiences.
 					</p>
 					<p>
-						Shortly after graduating from{' '}
+						After graduating from{' '}
 						<HyperLink url="https://www.ubc.ca/">
 							University of British Columbia
 						</HyperLink>
-						, I joined the engineering team at{' '}
-						<HyperLink url="https://www.ensemble.com/">
-							Ensemble System Inc.
+						, I joined the engineering teams at{' '}
+						<HyperLink url={Jobs[1].url}>{Jobs[1].name}</HyperLink>
+						{' and '}
+						<HyperLink url={Jobs[0].url}>
+							{Jobs[0].name}
 						</HyperLink>{' '}
 						where I worked on a wide variety of interesting and
 						meaningful projects on a daily basis.
