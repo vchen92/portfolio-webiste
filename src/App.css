@@ -63,6 +63,14 @@ body {
 	.app__container {
 		padding: 0px 50px;
 	}
+
+	.section {
+		padding: 80px 0px;
+	}
+
+	body {
+		font-size: var(--fz-lg);
+	}
 }
 
 @media (max-width: 480px) {
@@ -71,6 +79,6 @@ body {
 	}
 
 	body {
-		font-size: var(--fz-lg);
+		font-size: var(--fz-md);
 	}
 }

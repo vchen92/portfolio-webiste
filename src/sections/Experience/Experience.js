@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TabPanel from '../../components/VerticalTab/TabPanel/TabPanel';
 import TabList from './../../components/VerticalTab/TabList/TabList';
-import NumberHeading from '../../components/NumberHeading/NumberHeading';
+import NumberHeading from '../../components/UI/NumberHeading/NumberHeading';
 import Jobs from '../../content/jobs';
 import './Experience.css';
 

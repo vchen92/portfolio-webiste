@@ -1,5 +1,5 @@
 import React from 'react';
-import NumberHeading from '../../components/NumberHeading/NumberHeading';
+import NumberHeading from '../../components/UI/NumberHeading/NumberHeading';
 import ProjectCard from './../../components/ProjectCard/ProjectCard';
 import './Projects.css';
 import featuredProjects from '../../content/featured';
