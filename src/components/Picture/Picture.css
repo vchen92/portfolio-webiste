@@ -49,3 +49,10 @@
 	border-radius: var(--border-radius);
 	position: relative;
 }
+
+@media (max-width: 480px) {
+	.picture:after {
+		top: 10px;
+		left: 10px;
+	}
+}
