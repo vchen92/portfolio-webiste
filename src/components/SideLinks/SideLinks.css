@@ -33,3 +33,9 @@
 	left: auto;
 	right: 40px;
 }
+
+@media (max-width: 768px) {
+	.side-links {
+		display: none;
+	}
+}

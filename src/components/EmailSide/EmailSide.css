@@ -22,3 +22,9 @@
 .email-side .side-links__container:hover a {
 	color: var(--green);
 }
+
+@media (max-width: 768px) {
+	.email-side {
+		display: none;
+	}
+}

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+	.sideDrawer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		width: min(75vw, 350px);
+		height: 100vh;
+		outline: 0px;
+		background-color: var(--light-navy);
+		box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+		z-index: 9;
+		transform: translateX(0vw);
+		visibility: visible;
+		box-sizing: border-box;
+		transition: var(--transition);
+	}
+
+	.sideDrawer.hidden {
+		transform: translateX(100%);
+		visibility: hidden;
+	}
+}

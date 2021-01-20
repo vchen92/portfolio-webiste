@@ -1,13 +1,15 @@
-import React, { useLayoutEffect, useState } from 'react';
-import Resume from '../../../content/resume2020.pdf';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 
 import './NavBar.css';
-import CustomButton from '../../UI/CustomButton/CustomButton';
-import NavLink from '../NavLink/NavLink';
+import NavLink from '../NavLinks/NavLink/NavLink';
+import HamBox from '../HamBox/HamBox';
+import NavLinks from './../NavLinks/NavLinks';
+import SideDrawer from './../SideDrawer/SideDrawer';
 
 function NavBar() {
 	const [position, setPosition] = useState(0);
 	const [background, setBackground] = useState('navbar__top');
+	const [showDrawer, setShowDrawer] = useState(false);
 
 	useLayoutEffect(() => {
 		const listener = document.addEventListener('scroll', () => {
@@ -28,35 +30,43 @@ function NavBar() {
 		};
 	}, [position]);
 
+	useEffect(() => {
+		document.body.style.overflow = showDrawer ? 'hidden' : 'unset';
+	}, [showDrawer]);
+
+	const toggleSideDrawer = () => {
+		setShowDrawer(!showDrawer);
+	};
+
+	const hideDrawer = () => {
+		setShowDrawer(false);
+	};
+
 	return (
-		<>
-			<nav className={`navbar ${background}`}>
-				<div className="navbar__container">
-					<NavLink to="landing">
-						<div className="navbar__logo">
-							<img src="/logo.png" alt="" />
-						</div>
-					</NavLink>
-					<div className="navbar__links">
-						<NavLink to="about" number="01">
-							About
-						</NavLink>
-						<NavLink to="experience" number="02">
-							Experience
-						</NavLink>
-						<NavLink to="projects" number="03">
-							Projects
-						</NavLink>
-						<NavLink to="contact" number="04">
-							Contact
-						</NavLink>
-						<a href={Resume} target="_blank" rel="noreferrer">
-							<CustomButton>Resume</CustomButton>
-						</a>
+		<nav className={`navbar ${background}`}>
+			<div className="navbar__container">
+				<NavLink to="landing">
+					<div className="navbar__logo">
+						<img src="/logo.png" alt="" />
 					</div>
+				</NavLink>
+				<div className="navbar__navlinks">
+					<NavLinks orientation="horizontal" />
 				</div>
-			</nav>
-		</>
+				<button
+					className="navbar__hambox"
+					onClick={() => toggleSideDrawer()}
+				>
+					<HamBox active={showDrawer} />
+				</button>
+			</div>
+			<div
+				onClick={hideDrawer}
+				className={`navbar__sideDrawer ${showDrawer && 'show'}`}
+			>
+				<SideDrawer hideDrawer={hideDrawer} show={showDrawer} />
+			</div>
+		</nav>
 	);
 }
 

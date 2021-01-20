@@ -1,0 +1,26 @@
+.navLinks {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.vertical {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	padding-right: 80px;
+	flex-direction: column;
+	color: var(--lightest-slate);
+	font-family: var(--font-mono);
+	text-align: center;
+	height: 350px;
+}
+
+.vertical .navlink {
+	margin: 0;
+}
+
+.vertical .navLinks__button {
+	margin-top: 10px;
+}

@@ -7,8 +7,8 @@ import Picture from '../../components/Picture/Picture';
 import Jobs from '../../content/jobs';
 
 const skills = [
-	'JavaScript (ES6+)',
 	'React',
+	'JavaScript (ES6+)',
 	'Node.js',
 	'HTML & (S)CSS',
 	'Angular',

@@ -1,10 +1,10 @@
-@import '../../../shared.css';
+@import '../../../../shared.css';
 
 .navlink {
 	color: var(--lightest-slate);
 	margin-right: 30px;
 	font-family: var(--font-mono);
-	font-size: var(--fz-xs);
+	font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
 	cursor: pointer;
 }
 
