@@ -30,13 +30,12 @@
 
 .landing__heading {
 	margin: 0px;
-	font-size: clamp(25px, 8vw, 65px);
+	font-size: clamp(35px, 8vw, 75px);
 	font-weight: 600;
 }
 
 .landing__about {
 	color: var(--slate);
-	font-size: var(--fz-lg);
 	font-weight: 200;
 	max-width: 500px;
 	margin-top: 40px;
@@ -45,4 +44,18 @@
 
 .landing__button {
 	margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+	.landing__hi {
+		margin: 0 0 20px 2px;
+	}
+
+	.landing__subheader {
+		line-height: 1.1;
+	}
+
+	.landing__about {
+		margin-top: 20px;
+	}
 }
