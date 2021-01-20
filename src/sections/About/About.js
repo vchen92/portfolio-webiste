@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './About.css';
-import NumberHeading from '../../components/NumberHeading/NumberHeading';
+import NumberHeading from '../../components/UI/NumberHeading/NumberHeading';
 import HyperLink from '../../components/UI/HyperLink/HyperLink';
 import Picture from '../../components/Picture/Picture';
 import Jobs from '../../content/jobs';
