@@ -7,7 +7,7 @@ const Jobs = [
 		endDate: 'April 2019',
 		items: [
 			'Created and maintained a scalable system architecture for a cryptocurrency exchange platform',
-			'Lead team of 3 to build and beautify a responsive front-end interface using Angular framework',
+			'Led team of 3 to build and beautify a responsive front-end interface using Angular framework',
 			'Planned and created RESTful web services using AWS API Gateway + Lambda and Serverless framework',
 			'Utilized MySQL and Amazon RDS for processing data requests, optimizing database schemas and data migration',
 			'Designed the referral program which increased user registration rate by 22%',
