@@ -1,4 +1,4 @@
-@import '../../shared.css';
+@import '../../../shared.css';
 
 .number-heading {
 	display: flex;
@@ -11,7 +11,7 @@
 	color: var(--lightest-slate);
 }
 
-.number-heading:after {
+.number-heading::after {
 	content: '';
 	display: block;
 	position: relative;
@@ -29,8 +29,20 @@
 	margin-right: 10px;
 }
 
-@media screen and (max-width: 1080px) {
-	.number-heading:after {
+@media (max-width: 1080px) {
+	.number-heading::after {
 		width: 200px;
+	}
+}
+
+@media (max-width: 600px) {
+	.number-heading::after {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.number-heading::after {
+		width: 100%;
 	}
 }
