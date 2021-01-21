@@ -7,7 +7,7 @@ function TabList({ tabs, onSelectTabItem, tabSlider, active }) {
 			{tabs.map((tab, idx) => (
 				<li key={idx} id={idx} onClick={() => onSelectTabItem(idx)}>
 					<button
-						className={`tablist__button ${
+						className={`tabList__button ${
 							active === idx && 'active'
 						}`}
 					>

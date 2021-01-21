@@ -9,7 +9,7 @@
 	list-style: none;
 }
 
-.tabList button {
+.tabList__button {
 	text-decoration: none;
 	text-decoration-skip-ink: auto;
 	position: relative;
@@ -31,10 +31,10 @@
 	border-radius: 0px;
 }
 
-.tablist__button:hover,
-.tablist__button:active,
-.tablist__button:focus,
-.tablist__button.active {
+.tabList__button:hover,
+.tabList__button:active,
+.tabList__button:focus,
+.tabList__button.active {
 	background-color: var(--light-navy);
 	color: var(--green);
 	outline: 0px;
@@ -50,4 +50,41 @@
 	border-radius: var(--border-radius);
 	background: var(--green);
 	transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+@media (max-width: 600px) {
+	.tabList {
+		display: flex;
+		overflow-x: auto;
+		width: calc(100% + 100px);
+		margin-left: -50px;
+		margin-bottom: 30px;
+	}
+
+	.tabList__button {
+		width: var(--tab-width);
+		border-left: none !important;
+		border-bottom: 2px solid var(--lightest-navy) !important;
+	}
+
+	.tabList__styledHighlight {
+		top: auto;
+		bottom: 0px;
+		width: 100%;
+		max-width: var(--tab-width);
+		height: 2px;
+		margin-left: 50px;
+		transform: translateX(calc(0 * var(--tab-width)));
+	}
+}
+
+@media (max-width: 480px) {
+	.tabList {
+		width: calc(100% + 50px);
+		margin-left: 0px;
+	}
+
+	.tabList__styledHighlight {
+		margin-left: 0px;
+	}
 }
