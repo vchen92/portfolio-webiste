@@ -5,3 +5,9 @@
 .experience__container {
 	display: flex;
 }
+
+@media (max-width: 600px) {
+	.experience__container {
+		flex-direction: column;
+	}
+}

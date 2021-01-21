@@ -14,8 +14,8 @@ const Links = [
 function NavLinks({ orientation, onClick }) {
 	return (
 		<div className={`navLinks ${orientation}`}>
-			{Links.map(({ to, number, text }) => (
-				<NavLink to={to} number={number} onClick={onClick}>
+			{Links.map(({ to, number, text }, idx) => (
+				<NavLink key={idx} to={to} number={number} onClick={onClick}>
 					{text}
 				</NavLink>
 			))}
