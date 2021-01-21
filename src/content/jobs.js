@@ -1,6 +1,6 @@
 const Jobs = [
 	{
-		position: 'Full Stack Software Developer',
+		position: 'Software Developer',
 		name: 'CoinSeason',
 		url: 'https://www.coinseason.io/',
 		startDate: 'April 2018',
@@ -15,8 +15,8 @@ const Jobs = [
 		],
 	},
 	{
-		position: 'Junior Software Developer',
-		name: 'Ensemble Systems',
+		position: 'Software Developer',
+		name: 'Ensemble',
 		url: 'https://www.ensemble.com/',
 		startDate: 'April 2016',
 		endDate: 'February 2018',
