@@ -1,12 +1,18 @@
 import React from 'react';
 import './TabList.css';
 
-function TabList({ tabs, onSelectTabItem, tabSlider }) {
+function TabList({ tabs, onSelectTabItem, tabSlider, active }) {
 	return (
 		<ul className="tabList">
 			{tabs.map((tab, idx) => (
 				<li key={idx} id={idx} onClick={() => onSelectTabItem(idx)}>
-					<button>{tab.name}</button>
+					<button
+						className={`tablist__button ${
+							active === idx && 'active'
+						}`}
+					>
+						{tab.name}
+					</button>
 				</li>
 			))}
 			<div className="tabList__styledHighlight" style={tabSlider}></div>

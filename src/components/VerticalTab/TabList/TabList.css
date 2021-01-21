@@ -16,7 +16,6 @@
 	transition: var(--transition);
 	cursor: pointer;
 	display: flex;
-	-webkit-box-align: center;
 	align-items: center;
 	width: 100%;
 	height: var(--tab-height);
@@ -32,9 +31,10 @@
 	border-radius: 0px;
 }
 
-.tabList button:hover,
-.tabList button:active,
-.tabList button:focus {
+.tablist__button:hover,
+.tablist__button:active,
+.tablist__button:focus,
+.tablist__button.active {
 	background-color: var(--light-navy);
 	color: var(--green);
 	outline: 0px;
