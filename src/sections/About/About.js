@@ -27,14 +27,11 @@ function About() {
 			<div className="about__container">
 				<div className="about__description">
 					<p>
-						Hello! I'm Vincent, a software engineer based in
-						Vancouver, BC.
-					</p>
-					<p>
-						I enjoy creating things that people may use on the
-						internet, whether that be websites, applications, or
-						anything in between. My goal is to always build products
-						that provide pixel-perfect, performant experiences.
+						Hello! I'm Vincent, a software developer. I enjoy
+						creating things that people may use on the internet,
+						whether that be websites, applications, or anything in
+						between. My goal is to always build products that
+						provide pixel-perfect, optimized experiences.
 					</p>
 					<p>
 						After graduating from{' '}
@@ -43,7 +40,7 @@ function About() {
 						</HyperLink>
 						, I joined the engineering teams at{' '}
 						<HyperLink url={Jobs[1].url}>{Jobs[1].name}</HyperLink>
-						{' and '}
+						{' and afterwards '}
 						<HyperLink url={Jobs[0].url}>
 							{Jobs[0].name}
 						</HyperLink>{' '}
