@@ -11,12 +11,16 @@ function Experience() {
 	const [tabSliderStyle, setTabSliderStyle] = useState({});
 
 	useEffect(() => {
-		const width = window.innerWidth;
-		setIsVerticalTab(width >= 600);
-		setTabSliderStyle({
-			transform: getTransform(0),
-		});
-	}, [window.innerWidth]);
+		function handleResize() {
+			setIsVerticalTab(window.innerWidth >= 600);
+		}
+
+		window.addEventListener('resize', handleResize);
+
+		handleResize();
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
 	const getTransform = tab =>
 		isVerticalTab
