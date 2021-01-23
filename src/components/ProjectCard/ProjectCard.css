@@ -25,22 +25,45 @@
 	grid-area: 1 / 6 / -1 / -1;
 	position: relative;
 	z-index: 1;
-	padding: 10px 0px 10px 10px;
 	box-sizing: border-box;
 }
 
 .projectCard:nth-of-type(2n + 1) .projectCard__image-container {
 	grid-column: 1 / 8;
-	padding: 10px 10px 10px 0px;
 }
 
 .projectCard__image-container:hover {
-	padding: 0px !important;
+	transform: scale(1.05);
+}
+
+.projectCard__image-container a {
+	width: 100%;
+	background-color: var(--green);
+	border-radius: var(--border-radius);
+	vertical-align: middle;
+}
+
+.projectCard__image-container a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	inset: 0px;
+	z-index: 3;
+	transition: var(--transition);
+	background-color: var(--navy);
+	mix-blend-mode: screen;
+}
+
+.projectCard__image-wrapper {
+	width: 100%;
+	height: 100%;
 }
 
 .projectCard__image {
-	width: 95%;
+	width: 100%;
 	height: 100%;
+	box-sizing: border-box;
 	border-radius: var(--border-radius);
 	vertical-align: middle;
 	object-fit: fill;
@@ -92,17 +115,17 @@
 	box-shadow: 0 20px 30px -15px var(--navy-shadow);
 }
 
-.projectCard__technologies {
+.projectCard__techs {
 	z-index: 2;
 	margin: 25px 0px 10px;
 	text-align: left;
 }
 
-.projectCard:nth-of-type(2n + 1) .projectCard__technologies {
+.projectCard:nth-of-type(2n + 1) .projectCard__techs {
 	text-align: right;
 }
 
-.projectCard__technologies span {
+.projectCard__techs span {
 	margin: 0px 20px 5px 0px;
 	color: var(--light-slate);
 	font-family: var(--font-mono);
@@ -110,17 +133,19 @@
 	white-space: nowrap;
 }
 
-.projectCard__technologies span:last-of-type {
+.projectCard__techs span:last-of-type {
 	margin-right: 0px;
 }
 
 .projectCard__links {
 	display: flex;
 	justify-content: flex-start;
+	margin-left: -10px;
 }
 
 .projectCard:nth-of-type(2n + 1) .projectCard__links {
 	justify-content: flex-end;
+	margin-right: -10px;
 }
 
 .projectCard__links span:not(:last-of-type) {
@@ -146,4 +171,55 @@
 
 svg.feather {
 	fill: none;
+}
+
+@media (max-width: 1080px) {
+	.projectCard:nth-of-type(2n + 1) .projectCard__content {
+		grid-column: 5 / -1;
+	}
+
+	.projectCard__content {
+		grid-column: 1 / 9;
+	}
+}
+
+@media (max-width: 768px) {
+	.projectCard__content {
+		grid-column: 1 / -1;
+		padding: 40px 40px 30px;
+		z-index: 5;
+	}
+
+	.projectCard:nth-of-type(2n + 1) .projectCard__content {
+		grid-column: 1 / -1;
+		padding: 40px 40px 30px;
+	}
+
+	.projectCard:nth-of-type(2n + 1) .projectCard__image-container {
+		grid-column: 1 / -1;
+	}
+
+	.projectCard__title {
+		color: var(--white);
+	}
+
+	.projectCard__description {
+		padding: 20px 0px;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.projectCard__techs {
+		margin: 10px 0px;
+	}
+}
+
+@media (max-width: 480px) {
+	.projectCard__content {
+		padding: 30px 25px 20px;
+	}
+
+	.projectCard:nth-of-type(2n + 1) .projectCard__content {
+		padding: 25px 25px 20px;
+	}
 }

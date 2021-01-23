@@ -4,8 +4,8 @@ const featuredProjects = [
 		externalUrl: 'https://covid-19-bed80.web.app/',
 		githubUrl: 'https://github.com/vchen92/covid-19-tracker',
 		description:
-			'Web application for visualizing the spread and recovery of Covid-19 on a global scale. Easily find out the number of infected, recovered, and death toll by selecting a country on the dropdown or clicking/hovering over countries on the map.',
-		technologies: ['React', 'React-leaflet', 'Disease.sh API'],
+			'Web application for visualizing the spread and recovery of Covid-19 on a global scale. Easily find out the number of infected, recovered, and death by selecting a country on the dropdown or interacting with countries on the map.',
+		technologies: ['React-leaflet', 'Disease.sh API'],
 		screenshotPath: '/images/covid-tracker.png',
 	},
 	{

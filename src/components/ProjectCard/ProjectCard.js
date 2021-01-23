@@ -14,11 +14,13 @@ function ProjectCard({
 		<div className="projectCard">
 			<div className="projectCard__image-container">
 				<a href={externalUrl} target="_blank" rel="noreferrer">
-					<img
-						className="projectCard__image"
-						src={screenshotPath}
-						alt=""
-					/>
+					<div className="projectCard__image-wrapper">
+						<img
+							className="projectCard__image"
+							src={screenshotPath}
+							alt=""
+						/>
+					</div>
 				</a>
 			</div>
 
@@ -26,7 +28,7 @@ function ProjectCard({
 				<p className="projectCard__featured">Featured Project</p>
 				<h2 className="projectCard__title">{title}</h2>
 				<div className="projectCard__description">{description}</div>
-				<div className="projectCard__technologies">
+				<div className="projectCard__techs">
 					{technologies.map((tech, idx) => (
 						<span key={idx}>{tech}</span>
 					))}
