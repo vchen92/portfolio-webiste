@@ -7,8 +7,8 @@ function NavLink({ to, number, onClick, ...props }) {
 
 	useEffect(() => {
 		function handleResize() {
-			const isVertical = window.innerWidth >= 600;
-			setOffset(isVertical ? -100 : -20);
+			const largeDevice = window.innerWidth > 768;
+			setOffset(largeDevice ? -100 : -20);
 		}
 
 		window.addEventListener('resize', handleResize);

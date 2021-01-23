@@ -35,7 +35,6 @@
 	margin: 20px 0px 0px;
 	overflow: hidden;
 	list-style-type: none;
-	font-size: var(--fz-md);
 }
 
 .tabPanel__list li::before {
