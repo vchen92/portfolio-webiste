@@ -1,22 +1,22 @@
 @import '../../shared.css';
 
-.social-side a {
+.socialSide a {
 	color: var(--light-slate);
 	padding: 10px;
 }
 
-.social-side a svg {
+.socialSide a svg {
 	width: 20px;
 	height: 20px;
 }
 
-.social-side .side-links__container {
+.socialSide .sideLinks__container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.social-side a:hover {
+.socialSide a:hover {
 	color: var(--green);
 	transform: translateY(-5px);
 }

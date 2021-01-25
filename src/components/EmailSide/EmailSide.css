@@ -1,6 +1,6 @@
 @import '../../shared.css';
 
-.email-side .side-links__container {
+.emailSide .sideLinks__container {
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
 	font-size: var(--fz-sm);
@@ -9,22 +9,22 @@
 	padding: 10px;
 }
 
-.email-side a {
+.emailSide a {
 	color: var(--light-slate);
 	text-decoration: none;
 	transition: var(--transition);
 }
 
-.email-side .side-links__container:hover {
+.emailSide .side-links__container:hover {
 	transform: translateY(-3px);
 }
 
-.email-side .side-links__container:hover a {
+.emailSide .side-links__container:hover a {
 	color: var(--green);
 }
 
 @media (max-width: 768px) {
-	.email-side {
+	.emailSide {
 		display: none;
 	}
 }

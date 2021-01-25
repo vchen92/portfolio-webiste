@@ -6,7 +6,7 @@ import './SocialSide.css';
 
 function SocialSide() {
 	return (
-		<div className="social-side">
+		<div className="socialSide">
 			<SideLinks side="left">
 				{socialMedia.map(({ name, url }) => (
 					<a key={name} href={url} target="_blank" rel="noreferrer">

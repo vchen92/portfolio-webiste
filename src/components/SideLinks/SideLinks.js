@@ -3,8 +3,8 @@ import './SideLinks.css';
 
 function SideLinks({ side, children }) {
 	return (
-		<div className={`side-links ${side}`}>
-			<div className="side-links__container">{children}</div>
+		<div className={`sideLinks ${side}`}>
+			<div className="sideLinks__container">{children}</div>
 		</div>
 	);
 }

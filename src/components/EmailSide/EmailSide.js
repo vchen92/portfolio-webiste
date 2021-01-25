@@ -5,7 +5,7 @@ import './EmailSide.css';
 
 function EmailSide() {
 	return (
-		<div className="email-side">
+		<div className="emailSide">
 			<SideLinks side="right">
 				<a href={`mailto:${email}`}>{email}</a>
 			</SideLinks>
