@@ -18,6 +18,15 @@ const featuredProjects = [
 		screenshotPath: '/images/netflix-clone.png',
 	},
 	{
+		title: 'Spotify Profile',
+		externalUrl: 'https://vc-spotify-profile.web.app/',
+		githubUrl: 'https://github.com/vchen92/spotify-profile',
+		description:
+			'Spotify user profile page to access different playlists of the user and also act as an web-base control (play, pause, skip, previous, and volume control) for your Spotify on other devices.',
+		technologies: ['React', 'React Content', 'Spotify API'],
+		screenshotPath: '/images/spotify-profile.png',
+	},
+	{
 		title: 'WhatsApp Clone',
 		externalUrl: 'https://whatsapp-clo-40d6b.web.app/',
 		githubUrl: 'https://github.com/vchen92/whatsapp-clone',
