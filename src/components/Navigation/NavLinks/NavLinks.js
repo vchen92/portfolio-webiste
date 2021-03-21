@@ -1,6 +1,6 @@
 import React from 'react';
 import NavLink from './NavLink/NavLink';
-import Resume from '../../../content/resume2020.pdf';
+import Resume from '../../../content/resume2021.pdf';
 import CustomButton from './../../UI/CustomButton/CustomButton';
 import './NavLinks.css';
 
